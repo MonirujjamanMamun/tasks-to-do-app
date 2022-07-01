@@ -6,6 +6,7 @@ import Datanotfound from './Pages/Shared/Datanotfound';
 import Navbar from './Pages/Shared/Navbar';
 import ToDo from './Pages/Home/ToDo';
 import Calender from './Pages/Home/Calender';
+import Footer from './Pages/Shared/Footer';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path='/calender'element={<Calender></Calender>}></Route>
         <Route path='*' element={<Datanotfound></Datanotfound>}></Route>
       </Routes>
+      <Footer></Footer>
     </div>
   );
 }
